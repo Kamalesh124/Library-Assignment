@@ -128,7 +128,6 @@ Deployed on **Railway** with automatic CI/CD from the main branch.
 ## Author  
 **Kamalesh Chakraborty**  
 
-## License  
-This project is open-source under the **MIT License**.  
+
 
 
