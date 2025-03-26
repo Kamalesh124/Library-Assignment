@@ -3,6 +3,7 @@ package com.example.assignment.controller;
 import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -23,6 +24,9 @@ public class BookController {
     
     @Autowired
     BookService service;
+
+    @Autowired
+    private ApplicationContext context;
 
     @GetMapping("/")
     public ResponseEntity<String> welcomeMessage() {
