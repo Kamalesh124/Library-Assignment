@@ -2,6 +2,7 @@ package com.example.assignment.controller;
 
 import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -95,5 +96,11 @@ public class BookController {
         catch(BookNotFoundException e){
             return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
         }
+    }
+
+    @GetMapping("/exit")
+    public ResponseEntity<String> exitApplication() {
+        SpringApplication.exit(context, () -> 0);
+        return new ResponseEntity<>("Application is shutting down...", HttpStatus.OK);
     }
 }
