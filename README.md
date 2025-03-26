@@ -1,7 +1,3 @@
-Here is the updated version of your README with the `/exit` endpoint included:  
-
----
-
 # Library Management System  
 
 ## Project Overview  
@@ -135,6 +131,4 @@ Deployed on **Railway** with automatic CI/CD from the main branch.
 ## License  
 This project is open-source under the **MIT License**.  
 
----
 
-This version of the README is clean, professional, and includes the `/exit` endpoint. Let me know if you need any refinements! 🚀
