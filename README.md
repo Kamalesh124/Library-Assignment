@@ -108,13 +108,6 @@ The **Library Management System** is a **Spring Boot** application that provides
    mvn spring-boot:run
    ```
 
-### Environment Variables  
-- `MYSQL_HOST`: Database host  
-- `MYSQL_PORT`: Database port  
-- `MYSQL_DATABASE`: Database name  
-- `MYSQL_USERNAME`: Database username  
-- `MYSQL_PASSWORD`: Database password  
-
 ## Deployment  
 Deployed on **Railway** with automatic CI/CD from the main branch.  
 
