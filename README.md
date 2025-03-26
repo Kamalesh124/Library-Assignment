@@ -109,7 +109,7 @@ The **Library Management System** is a **Spring Boot** application that provides
    ```
 
 ## Deployment  
-Deployed on **Railway** with automatic CI/CD from the main branch.  
+Deployed on **Railway** with automatic CI/CD from the master branch.  
 
 ## Technologies Used  
 - **Spring Boot**  
