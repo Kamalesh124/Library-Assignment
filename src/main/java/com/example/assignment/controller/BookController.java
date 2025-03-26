@@ -23,6 +23,20 @@ public class BookController {
     @Autowired
     BookService service;
 
+    @GetMapping("/")
+    public ResponseEntity<String> welcomeMessage() {
+    String welcomeText = "Welcome to the Library Management System!\n" +
+        "Available Endpoints:\n" +
+        "- GET /books : Retrieve all books\n" +
+        "- GET /book/id/{bookId} : Get book by ID\n" +
+        "- GET /book/title/{title} : Search books by title\n" +
+        "- POST /book/add : Add a new book\n" +
+        "- PUT /book/update/{bookId} : Update an existing book\n" +
+        "- DELETE /book/delete/{bookId} : Delete a book\n" +
+        "\nDeployed at: https://library-assignment-production.up.railway.app/";
+    return new ResponseEntity<>(welcomeText, HttpStatus.OK);
+   }
+   
     @GetMapping("/books")
     public ResponseEntity<List<Book>> getAllBooks(){
         return new ResponseEntity<>(service.getAllBooks(),HttpStatus.OK);
